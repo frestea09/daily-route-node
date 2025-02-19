@@ -1,0 +1,6 @@
+Prepare for git list
+
+one
+two
+
+ini develop

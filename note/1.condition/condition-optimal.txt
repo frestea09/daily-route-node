@@ -1,0 +1,144 @@
+If-Else Statements:
+
+javascript
+if (condition) {
+  // blok kode jika kondisi benar
+} else {
+  // blok kode jika kondisi salah
+}
+
+Ternary Operator:
+
+javascript
+var result = (condition) ? 'Nilai Benar' : 'Nilai Salah';
+Switch Statement:
+
+javascript
+switch (expression) {
+  case value1:
+    // blok kode jika expression sama dengan value1
+    break;
+  case value2:
+    // blok kode jika expression sama dengan value2
+    break;
+  default:
+    // blok kode jika expression tidak cocok dengan nilai manapun
+}
+
+Short-Circuit Evaluation:
+
+javascript
+// Contoh menggunakan AND (&&)
+(condition1 && condition2) && doSomething();
+
+// Contoh menggunakan OR (||)
+(condition1 || condition2) || doSomething();
+Guard Clauses:
+
+javascript
+function exampleFunction(parameter) {
+  if (!parameter) {
+    return 'Nilai parameter tidak valid';
+  }
+  // Blok kode jika parameter valid
+}
+Chaining Comparison Operators:
+
+javascript
+Copy code
+if (a > b && b > c) {
+  // Blok kode jika a lebih besar dari b dan b lebih besar dari c
+}
+
+
+// optimatilasasi 
+# always return when is failed
+# Use Array.includes for Multiple Criteria
+function test(fruit) {
+  // extract conditions to array
+  const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+
+  if (redFruits.includes(fruit)) {
+    console.log('red');
+  }
+}
+
+# Less Nesting, Return Early
+#  Use Default Function Parameters and Destructuring
+  #use lodash 
+
+# Favor Map / Object Literal than Switch Statement
+
+// use object literal to find fruits in color
+  const fruitColor = {
+    red: ['apple', 'strawberry'],
+    yellow: ['banana', 'pineapple'],
+    purple: ['grape', 'plum']
+  };
+
+function test(color) {
+  return fruitColor[color] || [];
+}
+
+# Use Array.every & Array.some for All / Partial Criteria
+const ages = [32, 33, 16, 40];
+
+ages.every(checkAge)
+
+function checkAge(age) {
+  return age > 18;
+}
+
+const ages = [3, 10, 18, 20];
+
+ages.some(checkAdult);
+function checkAdult(age) {
+  return age > 18;
+}
+
+// TRAINING
+
+// with threhold boolean
+if (condition) {
+  // blok kode jika kondisi benar
+} else {
+  // blok kode jika kondisi salah
+}
+
+var result = (condition) ? 'Nilai Benar' : 'Nilai Salah';
+const theresult = trigggerOne || triggerTwo;
+const theresult = trigggerOne && triggerTwo;
+
+#efektif condition
+const listCondition = {
+  one: "satu",
+  two: "dua",
+};
+
+const result = listCondition["one"];
+console.log(result);
+
+//includes
+const filter = [1, 2, 3, 4, 5];
+const trigger = 12;
+if (filter.includes(2)) {
+  console.log("benar");
+} else {
+  console.log("tidak");
+}
+
+# Use Array.every & Array.some for All / Partial Criteria
+const ages = [32, 33, 16, 40];
+
+ages.every(checkAge)
+
+function checkAge(age) {
+  return age > 18;
+}
+
+const ages = [3, 10, 18, 20];
+
+ages.some(checkAdult);
+function checkAdult(age) {
+  return age > 18;
+}

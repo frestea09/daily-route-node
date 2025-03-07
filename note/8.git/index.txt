@@ -1,6 +1,1 @@
-Prepare for git list
-
-one
-two
-
-ini develop
+prepare for git training

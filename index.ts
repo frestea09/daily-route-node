@@ -1,15 +1,10 @@
-const listBilangan = [1, 2, 3, 4, 5, 6];
-
-console.log(listBilangan);
-
-listBilangan.forEach((item) => console.log(item));
-
-const temp = listBilangan.map((item) => item * 2);
-console.log(temp);
-
 const data = {
-  name: "ilman",
-  age: 30,
+  nama: "ilman",
+  sayHello: () => console.log("hello world"),
 };
 
-console.log(data.age);
+console.log(data.nama);
+data.sayHello();
+
+const { nama, sayHello } = data;
+console.log(nama);

@@ -2,4 +2,3 @@ prepare for git training
 
 one
 two
-temp

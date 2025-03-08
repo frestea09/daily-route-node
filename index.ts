@@ -1,10 +1,8 @@
-const data = {
-  nama: "ilman",
-  sayHello: () => console.log("hello world"),
-};
+class Employee {
+  sayHelloWorld() {
+    console.log("hello world");
+  }
+}
 
-console.log(data.nama);
-data.sayHello();
-
-const { nama, sayHello } = data;
-console.log(nama);
+const temp = new Employee();
+temp.sayHelloWorld();
